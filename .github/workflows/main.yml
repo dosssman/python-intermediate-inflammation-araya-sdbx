@@ -23,4 +23,5 @@ jobs:
       
       - name: Test with Pytest
         run: |
+          python -m pip3 install pytest
           python -m pytest --cov=inflammation.models tests/test_models.py
